@@ -1,25 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './Components/Header';
+import NavBar from './Components/NavBar';
+import Main from './Components/Main';
+import Footer from './Components/Footer';
+import ItemListContainer from './Components/ItemListContainer';
+import CartWidget from './Components/CartWidget';
+import {dimension1,dimension2,
+        link1,link2,listado,
+        camaras,carrito, bienvenida
+}from './Components/Variables.js';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header enviosLogo={link1} enviosTel={"43104649"} enviosTitulo={"Envíos a domicilio sin cargo!"} logWA={link2} numWA={"098798489"}/>
+      <NavBar cantidad={carrito} productos={listado} detalle={camaras} />
+      <ItemListContainer saludo={bienvenida} />
+      <Main carta={dimension2}/>
+      <Footer />
     </div>
-  );
+  )
 }
 
 export default App;

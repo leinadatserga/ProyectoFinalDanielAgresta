@@ -1,38 +1,132 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+@font-face {
+  font-family: fredoka;
+  src: url(../public/fonts/FredokaOne-Regular.ttf);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background-image: url(../public/images/Fondo.jpg);
+  background-size: cover;
+  background-blend-mode: soft-light;
+  background-color: rgba(157, 255, 206, 0.432);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+/* Header */
+.header{
   color: white;
+  height: 140px;
+  display: flex;
+  background: linear-gradient(rgba(11, 185, 185, 0.843),rgba(157, 255, 206, 0.55));
+  justify-content: space-around
+}
+a{
+  font-family: fredoka;
+}
+.envios{
+  color: white;
+  flex-direction: row;
+}
+.logo {
+  padding: 6px;
+  display: inline-flex;
+}
+.logoenv {
+  filter: invert();
+}
+.logo > a{
+  text-decoration: none;
+}
+.tel {
+  color: white;
+  font-size: 24px;
+  font-weight: bolder;
+  align-self: center;
+  margin-left: 40px;
+}
+.tit {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+.wa > a > p {
+  filter: invert();
+  padding-top: 6px;
 }
 
-.App-link {
-  color: #61dafb;
+
+/* NavBar */
+.nav{
+  display: block;
+  background-color: rgba(157, 255, 206, 0.55);
+}
+.cart{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.icono{
+  width: 180px;
+  height: 180px;
+  margin-left: 20px;
+}
+.marca{
+  height: 190px;
+  width: 650px;
+}
+.cantidad{
+  color: rgb(248, 0, 0);
+  text-shadow: 2px 1.5px 0px rgb(0, 0, 0);
+  border: none;
+  background-color: rgba(157, 255, 206, 0);
+  background-image: url(../public/images/Iconocart.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 22px;
+  font-weight: bolder;
+  height: 85px;
+  width: 90px;
+  margin: 30px;
+}
+.listadoProductos{
+  font-family: fredoka;
+  color: darkblue;
+  text-decoration: none;
+  margin: 40px 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/* ItemListContainer */
+.bienvenida{
+  color: rgb(85, 85, 216);
+  text-shadow: 2px 1.5px 6px rgb(255, 255, 92);
+  font-family: fredoka;
+  font-size: 40px;
+  text-align: center;
+  transform: translateY(-180px)
 }
+
+/* Main */
+.main{
+  display: flex;
+  justify-content: center;
+  opacity: 60%;
+}
+.main > img{
+  height: 550px;
+  border: 30px solid;
+  border-radius: 70px;
+  margin-bottom: 100px;
+}
+
+
+
+/* Variables */
