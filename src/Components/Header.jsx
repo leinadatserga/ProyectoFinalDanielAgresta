@@ -13,7 +13,7 @@ const Header = ({enviosLogo, enviosTel, enviosTitulo, logWA, numWA}) => {
                 </div>
             </div>
             <div className="wa">
-                <a href="/"><p>{logWA}</p></a>
+                <a href="https://www.whatsapp.com/?lang=es" target="_blank" rel="noreferrer"><p>{logWA}</p></a>
                 <h6>{numWA}</h6>
             </div>
         </div>

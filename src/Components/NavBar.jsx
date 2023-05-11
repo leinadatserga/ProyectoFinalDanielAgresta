@@ -1,5 +1,4 @@
 import CartWidget from "./CartWidget";
-
 const NavBar = ({cantidad, productos, detalle}) => {
     return(
         <div className="nav">
@@ -18,11 +17,11 @@ const NavBar = ({cantidad, productos, detalle}) => {
                         <div className="collapse navbar-collapse" id="navbarNavDropdown" data-bs-theme="dark">
                             <ul className="navbar-nav">
                                 <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle fs-2 text-primary-emphasis" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a className="nav-link dropdown-toggle fs-3 text-primary-emphasis" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Cámaras de seguridad
                                 </a>
                                 <ul className="dropdown-menu">
-                                    <li><a className="dropdown-item text-primary-emphasis" href="#ItemListContainer">{productos[0]}{detalle[0]}</a></li>
+                                    <li><a className="dropdown-item text-primary-emphasis" href="/">{productos[0]}{detalle[0]}</a></li>
                                     <li><a className="dropdown-item text-primary-emphasis" href="/">{productos[1]}{detalle[1]}</a></li>
                                     <li><a className="dropdown-item text-primary-emphasis" href="/">{productos[2]}{detalle[2]}</a></li>
                                     <li><a className="dropdown-item text-primary-emphasis" href="/">{productos[3]}{detalle[3]}</a></li>
@@ -33,7 +32,7 @@ const NavBar = ({cantidad, productos, detalle}) => {
                                 </ul>
                                 </li>
                                 <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle fs-2 text-primary-emphasis" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a className="nav-link dropdown-toggle fs-3 text-primary-emphasis" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Equipos NVR/DVR
                                 </a>
                                 <ul className="dropdown-menu">
@@ -45,7 +44,7 @@ const NavBar = ({cantidad, productos, detalle}) => {
                                 </ul>
                                 </li>
                                 <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle fs-2 text-primary-emphasis" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a className="nav-link dropdown-toggle fs-3 text-primary-emphasis" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Cables y terminales
                                 </a>
                                 <ul className="dropdown-menu">
@@ -59,7 +58,7 @@ const NavBar = ({cantidad, productos, detalle}) => {
                                 </li>
 
                                 <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle fs-2 text-primary-emphasis" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a className="nav-link dropdown-toggle fs-3 text-primary-emphasis" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Accesorios de instalación
                                 </a>
                                 <ul className="dropdown-menu">

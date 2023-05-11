@@ -1,4 +1,4 @@
-export const dimension1 = 80;
+const dimension1 = 80;
 export const dimension2 = 400;
 export const link1 = <img src="./images/envios.png" alt="icono envio" width={50} height={50} />;
 export const link2 = <img src="./images/WA.png" alt="icono wa" width={50} height={50} />;
