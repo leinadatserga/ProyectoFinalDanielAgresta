@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Header = ({enviosLogo, enviosTel, enviosTitulo, logWA, numWA}) => {
     return(
         <div className="header">
@@ -13,7 +15,7 @@ const Header = ({enviosLogo, enviosTel, enviosTitulo, logWA, numWA}) => {
                 </div>
             </div>
             <div className="wa">
-                <a href="https://www.whatsapp.com/?lang=es" target="_blank" rel="noreferrer"><p>{logWA}</p></a>
+                <Link to="https://www.whatsapp.com/?lang=es" target="_blank" rel="noreferrer"><p>{logWA}</p></Link>
                 <h6>{numWA}</h6>
             </div>
         </div>

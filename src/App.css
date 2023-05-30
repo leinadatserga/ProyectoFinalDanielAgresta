@@ -113,10 +113,15 @@ a{
 .bienvenida{
   color: rgb(85, 85, 216);
   text-shadow: 2px 1.5px 6px rgb(255, 255, 92);
+  cursor: grab;
   font-family: fredoka;
-  font-size: 40px;
+  font-size: 36px;
   text-align: center;
-  transform: translateY(-180px)
+  transform: translateY(-130px)
+}
+.bienvenida:hover{
+  filter: brightness(0.5);
+  transition: 2s;
 }
 
 /* Main */
@@ -130,4 +135,8 @@ a{
   border: 30px solid;
   border-radius: 70px;
   margin-bottom: 100px;
+}
+.card{
+  background-color: darkcyan;
+  font-family: fredoka;
 }
