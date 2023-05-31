@@ -1,7 +1,7 @@
-const CartWidget = ({amount}) => {
+const CartWidget = ({ amount }) => {
     return(
         <div>
-            <button className="cantidad" >{amount}</button>
+            <button className="cantidad" >{ amount }</button>
         </div>
     )
 }

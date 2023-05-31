@@ -3,7 +3,7 @@ import products from "./BaseDeDatos/Productos.json";
 import ItemList from "./ItemList";
 import { useParams } from "react-router-dom";
 
-const ItemListContainer = ({greeting}) => {
+const ItemListContainer = ({ greeting }) => {
     const [product, setProduct] = useState([]);
     const { categoryId } = useParams();
     useEffect(() => {
@@ -19,12 +19,12 @@ const ItemListContainer = ({greeting}) => {
     return(
         <div>
             <div>
-                <p className="bienvenida">{greeting}</p>
+                <p className="bienvenida">{ greeting }</p>
             </div>
             <div className="container my-5">
                 <div className="row">
                     <div className="col">
-                    <ItemList product={product} />
+                    <ItemList product={ product } />
                     </div>
                 </div>
             </div>

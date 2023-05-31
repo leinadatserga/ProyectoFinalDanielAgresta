@@ -1,5 +1,6 @@
 import { useState } from "react";
-const ItemCount = ({quantity}) => {
+
+const ItemCount = ({ quantity }) => {
     const [counter, setCounter] = useState(0);
     const [counterStock, setCounterStock] = useState(quantity);
     const [newStock, setNewStock] = useState(quantity);
@@ -27,16 +28,16 @@ const ItemCount = ({quantity}) => {
             <div className="row">
                 <div className="col">
                     <div className="btn-group-lg" role="group" aria-label="Basic example">
-                        <button type="button" className="btn btn-outlined-dark"  onClick={offAdd}>-</button>
-                        <button type="button" className="btn btn-info">{counter}</button>
-                        <button type="button" className="btn btn-outlined-dark" onClick={onAdd}>+</button>
+                        <button type="button" className="btn btn-outlined-dark"  onClick={ offAdd }>-</button>
+                        <button type="button" className="btn btn-info">{ counter }</button>
+                        <button type="button" className="btn btn-outlined-dark" onClick= {onAdd }>+</button>
                     </div>
                 </div>
             </div>
             <div className="row">
                 <div className="col d-flex justify-content-between">
-                    <button type="button" className="btn btn-info" onClick={updateStock}>Agregar al carrito <b>➜ </b></button>
-                    <button type="button" className="btn btn-outline-light active">Stock: {newStock}</button>
+                    <button type="button" className="btn btn-info" onClick={ updateStock }>Agregar al carrito <b>➜ </b></button>
+                    <button type="button" className="btn btn-outline-light active">Stock: { newStock }</button>
                 </div>
             </div>
         </div>

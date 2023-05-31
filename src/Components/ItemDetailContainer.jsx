@@ -20,16 +20,13 @@ const ItemDetailContainer = () => {
     }, [id]);
 
     return(
-        <div>
         <div className="container">
             <div className="row justify-content-md-center">
                 <div className="col">
-                <ItemDetail item={product} />
+                <ItemDetail item={ product } />
                 </div>
             </div>
         </div>
-    </div>
-
     )
 }
 export default ItemDetailContainer;

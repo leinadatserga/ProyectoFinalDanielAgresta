@@ -1,6 +1,6 @@
 import ItemCount from "./ItemCount";
 
-const ItemDetail = ({item}) => {
+const ItemDetail = ({ item }) => {
     return(
         <div className="container">
             <div className="row">
@@ -10,7 +10,7 @@ const ItemDetail = ({item}) => {
                         <img src = { item.imagen } className="image-fluid" alt = { item.nombre }/>
                         <div className="card-body">
                             <p className="card-text fs-4">{ item.descripcion }</p>
-                            <h4>Precio: u$s {item.precio} iva incl.</h4>
+                            <h4 className="text-center shadow-lg bg-info rounded text-danger p-2">Precio: u$s { item.precio } iva incl.</h4>
                             {item.stock && <ItemCount quantity={ item.stock } />}
                         </div>
                     </div>
