@@ -6,27 +6,25 @@ import { useParams } from "react-router-dom";
 const ItemListContainer = ({ greeting }) => {
     const [product, setProduct] = useState([]);
     const { categoryId } = useParams();
+    let cat = ""
     useEffect(() => {
         const promic = new Promise((resolve) => {
             setTimeout (() => {
-                resolve(categoryId ? products.filter(filt => filt.categoria === categoryId) : products)
+                resolve(categoryId ? products.filter(filt => filt.categoria === categoryId) : products);
             }, 2000); 
         });
         promic.then(data => {
            setProduct(data); 
         })
     }, [categoryId]);
+    categoryId ? cat = categoryId : cat=""
     return(
-        <div>
+        <div className="container-fluid mb-5">
             <div>
-                <p className="bienvenida">{ greeting }</p>
+                 <p className="bienvenida">{ greeting + cat }</p>
             </div>
-            <div className="container my-5">
-                <div className="row">
-                    <div className="col">
-                    <ItemList product={ product } />
-                    </div>
-                </div>
+            <div className="row justify-content-center">
+                <ItemList product={ product } />
             </div>
         </div>
     )

@@ -23,10 +23,10 @@ const NavBar = ({ cantidad }) => {
                                 <NavLink className="nav-link active fs-3 text-primary-emphasis" to="/category/Equipos de Grabación">- Equipos NVR/DVR -</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link active fs-3 text-primary-emphasis" to="/category/">- Cables y terminales -</NavLink>
+                                <NavLink className="nav-link active fs-3 text-primary-emphasis" to="/category/Cables y terminales">- Cables y terminales -</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link active fs-3 text-primary-emphasis" to="/category/">- Accesorios de instalación -</NavLink>
+                                <NavLink className="nav-link active fs-3 text-primary-emphasis" to="/category/Accesorios de instalación">- Accesorios de instalación -</NavLink>
                             </li>
                         </ul>
                     </div>
