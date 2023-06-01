@@ -21,14 +21,13 @@ const ItemDetailContainer = () => {
 
     return(
         <div>
-            <p>"rrrr"</p>
-        <div className="container my-5">
-            <div className="row justify-content-center mb-5 w-75">
-                <div className="col">
-                <ItemDetail item={ product } />
+            <div className="container my-5">
+                <div className="row justify-content-center mb-5 w-75">
+                    <div className="col">
+                        <ItemDetail item={ product } />
+                    </div>
                 </div>
             </div>
-        </div>
         </div>
     )
 }
