@@ -5,9 +5,9 @@ const NavBar = ({ cantidad }) => {
     return(
         <div className="nav">
             <div className="cart">
-                <img className="icono" src="./images/Icono AG.png" alt="logoPrincipal" />
-                <Link to={ "/" } ><img className="marca" src="./images/Marca.png" alt="marca" /></Link>
-                <CartWidget amount={ cantidad } />       
+                <img className="icono" src="/images/Icono AG.png" alt="logoPrincipal" />
+                <Link to={ "/" } ><img className="marca" src="/images/Marca.png" alt="marca" /></Link>
+                <CartWidget />       
             </div>
             <nav className="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
                 <div className="container-fluid">

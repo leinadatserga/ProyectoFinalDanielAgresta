@@ -107,6 +107,20 @@ a{
   width: 90px;
   margin: 30px;
 }
+.cant{
+  color: rgb(248, 0, 0);
+  text-shadow: 2px 1.5px 0px rgb(0, 0, 0);
+  border: none;
+  background-color: rgba(157, 255, 206, 0);
+  background-image: url(../public/images/Iconocart.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 22px;
+  font-weight: bolder;
+  height: 60px;
+  width: 90px;
+}
 
 
 /* ItemListContainer */
@@ -137,6 +151,12 @@ a{
   margin-bottom: 100px;
 }
 .card{
-  background-color: darkcyan;
+  background-color: rgb(12, 117, 253);
   font-family: fredoka;
+}
+.carrito {
+  font-family: fredoka;
+}
+.final{
+  background-color: rgba(246, 232, 164, 0.427);
 }
