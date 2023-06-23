@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+
 const Item = ({ item }) => {
     return (
         <>
@@ -13,4 +14,5 @@ const Item = ({ item }) => {
         </>
     )
 }
+
 export default Item;

@@ -159,4 +159,44 @@ a{
 }
 .final{
   background-color: rgba(246, 232, 164, 0.427);
+  text-shadow: none;
+}
+.tabla{
+  background-color: rgba(164, 246, 171, 0.427); 
+  text-shadow: none;
+}
+.comprar{
+  text-decoration: none;
+  text-shadow: 2px 1.5px 0px rgb(0, 0, 0);
+}
+.carrito{
+  text-shadow: 2px 1.5px 0px rgb(0, 0, 0);
+}
+.emitir{
+  color: rgb(157, 4, 4);
+  text-shadow: none;
+}
+.ingresa{
+  color: rgb(157, 4, 4);
+  text-shadow: none;
+  margin: 40px 0px;
+}
+.boton{
+  text-shadow: 2px 1.5px 0px rgb(0, 0, 0);
+}
+.gracias{
+  font-size: 70px;
+  padding: 15px;
+  color: rgb(144, 215, 1);
+  background-color: rgba(127, 255, 212, 0.653);
+}
+.clvorden{
+  color: rgb(0, 56, 0);
+  background-color: rgba(127, 255, 212, 0.653);
+  text-shadow: none;
+}
+.inicio{
+  background-color: rgba(127, 255, 212, 0.653);
+  padding: 15px;
+  border-radius: 15px;
 }

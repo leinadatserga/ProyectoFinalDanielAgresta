@@ -4,4 +4,4 @@ export const bienvenida = 'Hola!, bienvenido a nuestro sitio!!!';
 export const categoria = 'Productos en la Categoría ';
 export const tel1 = "43104649";
 export const tel2 = "098798489";
-export const titEnvios = "Envíos a domicilio sin cargo!"
+export const titEnvios = "Envíos a domicilio sin cargo!";

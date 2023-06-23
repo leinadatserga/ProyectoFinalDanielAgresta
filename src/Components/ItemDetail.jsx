@@ -9,11 +9,9 @@ const ItemDetail = ({ item, stock }) => {
     const agregar = ( counter ) => {
         addItem ( elemento, counter )
     }
-
     useEffect (() => {
         setElemento ( item );
     }, [ item ]);
-
     return(
         <div>
             <div className="card w-50 text-white">

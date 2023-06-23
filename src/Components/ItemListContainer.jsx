@@ -3,16 +3,12 @@ import { collection, getDocs, getFirestore, query, where } from "firebase/firest
 import ItemList from "./ItemList";
 import { useParams } from "react-router-dom";
 
-
 const ItemListContainer = ({ greeting }) => {
-    const [ product, setProduct ] = useState([]);
-    const { categoryId } = useParams();
+    const [ product, setProduct ] = useState ([]);
+    const { categoryId } = useParams ();
     let cat = "";
-
-    
-    useEffect(() => {
-
-        const dataBase = getFirestore();
+    useEffect (() => {
+        const dataBase = getFirestore ();
         const productsCollection = collection ( dataBase, "products" );
         const search = categoryId ? query ( productsCollection, where ( "categoria", "==", categoryId )) : productsCollection;
         getDocs ( search ).then ( result => {
@@ -30,9 +26,10 @@ const ItemListContainer = ({ greeting }) => {
                  <p className="bienvenida">{ greeting + cat }</p>
             </div>
             <div className="row justify-content-center">
-                <ItemList product={ product } />
+                <ItemList product = { product } />
             </div>
         </div>
     )
 }
-export default ItemListContainer
+
+export default ItemListContainer;

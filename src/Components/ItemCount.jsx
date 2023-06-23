@@ -1,13 +1,10 @@
 import { useState } from "react";
-// import { CartContext } from "./Context/CartContextProvider";
 import { Link } from "react-router-dom";
 
 const ItemCount = ({ agregar, quantity }) => {
     const [counter, setCounter] = useState ( 0 );
     const [counterStock, setCounterStock] = useState ( quantity );
     const [added, setAdded] = useState ( false );
-
-
     const plusAdd = () => {
         if ( counter < quantity && counterStock > 0 ) {
             setAdded ( true );
@@ -29,7 +26,6 @@ const ItemCount = ({ agregar, quantity }) => {
         setCounter ( 0 );
         }
     }
-    
     return(
         <div className="container">
             <div className="row">
@@ -50,4 +46,5 @@ const ItemCount = ({ agregar, quantity }) => {
         </div>
     )
 }
+
 export default ItemCount;

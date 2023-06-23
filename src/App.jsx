@@ -11,6 +11,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import CartContextProvider from './Components/Context/CartContextProvider';
 import Cart from './Components/Cart';
 import Checkout from './Components/Checkout';
+import Congrats from './Components/Congrats';
 
 
 
@@ -21,13 +22,14 @@ function App() {
       <CartContextProvider>
         <BrowserRouter>
           <Header enviosLogo={ link1 } enviosTel={ tel1 } enviosTitulo={ titEnvios } logWA={ link2 } numWA={ tel2 }/>
-          <NavBar cantidad={ 4 } />
+          <NavBar />
           <Routes>
             <Route path={ "/" } element={ <ItemListContainer greeting={ bienvenida } /> } />
             <Route path={ "/category/:categoryId" } element={ <ItemListContainer greeting={ categoria } /> } />
             <Route path={ "/item/:id" } element={ <ItemDetailContainer /> } />
             <Route path={ "/cart" } element={ <Cart /> } />
             <Route path={ "/checkout" } element={ <Checkout /> } />
+            <Route path={ "/congrats/:id" } element={ <Congrats /> } />
             <Route path={ "/*" } element={ <Error404 /> } />
           </Routes>
           <Main />
